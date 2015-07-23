@@ -1,0 +1,29 @@
+INSERT INTO Users (Login,FIO,Email)
+VALUES ('Chizhov-AS', 'Чижов Алексей Сергеевич', 'chizhov@rshb.ru');
+
+INSERT INTO Workstations (UserID,Hostname,IP)
+VALUES (last_insert_rowid(),'WGO-IT000000177','10.0.67.101');
+
+INSERT INTO Users (Login,FIO,Email)
+VALUES ('ostroushko-ad', 'Остроушко Алексей Дмитриевич', 'Ostroushko@rshb.ru');
+
+INSERT INTO Workstations (UserID,Hostname,IP)
+VALUES (last_insert_rowid(),'wgo-fil00000031','10.10.67.176');
+
+INSERT INTO Users (Login,FIO,Email)
+VALUES ('Pelevin-AV', 'Пелевин Александр Владимирович', 'PelevinAV@rshb.ru');
+
+INSERT INTO Workstations (UserID,Hostname,IP)
+VALUES (last_insert_rowid(),'wgo-depmet00117','10.10.72.216');
+
+INSERT INTO Users (Login,FIO,Email)
+VALUES ('Veselkina-MG', 'Весёлкина Марина Геннадьевна', 'VeselkinaMG@rshb.ru');
+
+INSERT INTO Workstations (UserID,Hostname,IP)
+VALUES (last_insert_rowid(),'wgo-fin00000014','10.10.74.118');
+
+INSERT INTO Users (Login,FIO,Email)
+VALUES ('Dudukina', 'Дюдюкина Марина Александровна', 'Dudukina@rshb.ru');
+
+INSERT INTO Workstations (UserID,Hostname,IP)
+VALUES (last_insert_rowid(),'wgo-oper0000125','10.0.68.89');

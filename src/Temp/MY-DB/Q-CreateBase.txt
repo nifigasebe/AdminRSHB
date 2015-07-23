@@ -1,0 +1,17 @@
+--
+-- File generated with SQLiteStudio v3.0.2 on Чт фев 5 11:41:15 2015
+--
+-- Text encoding used: windows-1251
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Workstations
+DROP TABLE IF EXISTS Workstations;
+CREATE TABLE Workstations (WSID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, UserID INTEGER REFERENCES Users (UserID) ON DELETE SET NULL ON UPDATE SET NULL, Hostname CHAR (20), IP CHAR (20))
+
+-- Table: Users
+DROP TABLE IF EXISTS Users;
+CREATE TABLE Users (UserID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, Login CHAR (50), FIO CHAR (100), Email CHAR (50))
+
+COMMIT TRANSACTION;
